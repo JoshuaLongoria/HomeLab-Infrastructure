@@ -1,0 +1,4 @@
+Documentation (Text file)
+
+Notes on global VirtualBox settings,
+such as the default location for VDI files or any performance tweaks.
