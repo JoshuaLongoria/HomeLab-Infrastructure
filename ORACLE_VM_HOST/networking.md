@@ -1,6 +1,6 @@
 
 
-Script (Shell script)
+Documentation (Markdown text file)
 
-A script containing commands to secure the host machine's operating system 
-(if you're using a dedicated host for security reasons).
+Most Important: Document the configuration of your VirtualBox network adapters 
+(e.g., Host-Only Adapter). This is critical for connecting your VMs.
