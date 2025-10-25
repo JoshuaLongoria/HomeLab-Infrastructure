@@ -13,7 +13,7 @@
    | Machines                                   | CPU                         | RAM |  STORGE |
 |-----------------------------------------------|----------------------------|---------|-------|
 | Windows 10 pro                                 | Intel core i9 - 7900X | 64 GB DDR4| 2TB|
-| Kali Linux          | 2 | 20359mb  |25GB
+| Kali Linux          | 2 | 30000mb  |25GB
 | Ubuntu Server       | 4 | 8000mb  |25GB
 
 # Networking Table: 
