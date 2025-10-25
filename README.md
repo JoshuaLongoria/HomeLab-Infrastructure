@@ -19,7 +19,7 @@
 # Networking Table: 
 | Machines   | Opertating system| Adapter Type| Network Mode|Mac address| IP address|Purpose|
 |------------|------------------|-------------|-------------|-----------|-----------|------|
-| Kali Linux          | NAT | intel Pro | NAT| -- | -- | Pentesting security tools|
-| Ubuntu Server       | NAT | intel Pro | NAT| -- | -- | Web server testing services| 
+|VM1           |Kali Linux | intel Pro | NAT| 0800270D1B72 | 10.0.2.3 | Pentesting security tools|
+|VM2       | Ubuntu | intel Pro | NAT|0800272B2EED | 10.0.2.15 | Web server testing services| 
 
 Getting started: 
