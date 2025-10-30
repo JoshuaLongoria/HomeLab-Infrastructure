@@ -21,7 +21,7 @@
 
 # **Network Configuration:**
 # **NETWORK_MODE="NAT"**
-# **STATIC_IP="192.168.1.10"** # Replace with the actual IP you assign in your lab
+# **STATIC_IP="192.168.1.3"** # Replace with the actual IP you assign in your lab
 # **SUBNET_MASK="255.255.255.0"**
 
 # **Post-Setup Reminders:**
