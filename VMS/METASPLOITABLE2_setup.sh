@@ -1,21 +1,29 @@
+#!/bin/bash
+# This script serves primarily as a configuration documentation file for the Metasploitable2 VM.
 
-Since this is a pre-built vulnerable VM, you'll mainly store documentation here, 
-such as default usernames/passwords and reminders of its known vulnerabilities.
+### Hardware Configuration Table
+# The lines below are designed to be a readable table within the script.
+# | Machines          | CPU | RAM | STORGE |
+# |-------------------|-----|-----|--------|
+# | METASPLOITABLE2   | 1   | 512mb | 8GB    |
 
+###  VM Setup Documentation
+# Use comments (#) to document the key information about this VM.
 
-| Machines                                   | CPU                         | RAM |  STORGE |
-|-----------------------------------------------|----------------------------|---------|-------|
-| METASPLOITABLE2     | 1 | 512mb   |8GB|
+# **Purpose:** Intentionally vulnerable Linux VM for penetration testing practice.
 
-#Purpose
-Intentionally vulnerable Linux VM for penetration testing practice
+# **Default Username:** msfadmin
+# **Default Password:** msfadmin
 
-#Default Username
-msfadmin
+# **Known Vulnerabilities:**
+# FTP, SSH, Telnet, Samba, VNC, PostgreSQL, MySQL default credentials/weak configurations,
+# and common web application flaws like SQL injection and command injection.
 
-#Default Password
-msfadmin
+# **Network Configuration:**
+# **NETWORK_MODE="NAT"**
+# **STATIC_IP="192.168.1.10"** # Replace with the actual IP you assign in your lab
+# **SUBNET_MASK="255.255.255.0"**
 
-#Known Vulnerabilities
-FTP, SSH, Telnet, Samba, VNC, PostgreSQL, MySQL 
-default credentials/weak configurations, and common web application flaws like SQL injection and command injection.
+# **Post-Setup Reminders:**
+# **- Ensure the VM is isolated on a dedicated, non-Internet-facing network.**
+# **- Only use this VM for authorized, ethical hacking practice.**
