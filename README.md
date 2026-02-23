@@ -22,7 +22,7 @@
 |------------|------------------|-------------|-------------|-----------|-----------|------|
 |VM1           |Kali Linux | intel Pro | NAT network| 0800270D1B72 | 10.0.2.3 | Pentesting security tools|
 |VM2       | Ubuntu | intel Pro | NAT network|0800272B2EED | 10.0.2.15 | Web server testing services|
-|VM3       | METASPLOITABLE2 | intel Pro | NAT Network| 080027133BAF | 10.0.2.255 | Vulnerability Testing| 
+|VM3       | METASPLOITABLE2 | intel Pro | NAT Network| 080027133BAF | 10.0.2.4 | Vulnerability Testing| 
 
 ### Getting started:
 This section outlines the immediate steps required to power on you Virtual Machines (VMs),
