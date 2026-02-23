@@ -1,16 +1,16 @@
 # HomeLab-Infrastructure
 
 # Overview: 
-  This home lab is simuulated network enviroment running on Oracle VM VirtualBox.
+  This home lab is simulated network enviroment running on Oracle VM VirtualBox.
   It hosts two virtual machines
   | Machines                                       | Purpose        | Connected |
 |-----------------------------------------------|----------------------------|----------|
 | Kali Linux                                    |for penetration testing practice| NAT Network|
-| Ubuntu Server          | for general administrastion and services| NAT Network |
+| Ubuntu Server          | for general administration and services| NAT Network |
 | METASPLOITABLE2        | To test vulnerabilities| NAT Network | 
       
 # System Specs:
-   | Machines                                   | CPU                         | RAM |  STORGE |
+   | Machines                                   | CPU                         | RAM |  STORAGE |
 |-----------------------------------------------|----------------------------|---------|-------|
 | Windows 10 pro (HOST)                                | Intel core i9 - 7900X | 64 GB DDR4| 2TB|
 | Kali Linux          | 2 | 4000mb  |25GB
@@ -40,7 +40,7 @@ The VMs will use a shared, private "Nat Network" to communicate directly with ea
    * Change **Attached to:** from "Nat" to the **NAT Network** you just created
    
 #### 2. Power On and Verify Connectivity
-1. **Start VMs:** Power on both the **Kali Linux** and **Ununtu Server** VMs.
+1. **Start VMs:** Power on both the **Kali Linux** and **Ubuntu Server** VMs.
 2. **Check IPs:** They will automatically recevice unique IP addresses from the NAT Network.
    Use the following command inside each VM to verify the connection:
    * `ip a`
@@ -48,7 +48,7 @@ The VMs will use a shared, private "Nat Network" to communicate directly with ea
 4. **Test Communication:** From the **Kali VM**, run ` ping [Ubuntu Server IP]` to confirm direct communication
 
 #### 3. Initial Setup and Hardening
-1. **Update Kali:** Keep sercuity tools current by running: 
+1. **Update Kali:** Keep security tools current by running: 
 ```bash
 sudo eapt update && sudo apt full-upgrade -y
 ```
@@ -56,8 +56,10 @@ sudo eapt update && sudo apt full-upgrade -y
 ```bash
 # Deny all incoming connections by default 
 sudo ufw default deny incoming
+
 # Allow necessary services (e.g., SHH on port 22)
 sudo ufw allow ssh
+
 # Enable the firewall 
 sudo ufw enable
 ```
