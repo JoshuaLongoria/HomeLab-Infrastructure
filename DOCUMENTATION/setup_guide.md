@@ -8,21 +8,36 @@ This guide details the specific configurations and common "gotchas" encountered 
 To allow VMs to communicate while remaining isolated from your physical home network, use a **NAT Network**.
 
 1. Go to **File > Tools > Network Manager**.
-2. Create a new NAT Network named `LabNetwork` or any name you perfer.
+2. Create a new NAT Network named `LabNetwork` (or any name you prefer).
 3. Set the IPv4 Prefix to `10.0.2.0/24`.
-4. Ensure "Enable DHCP" is checked (or handle static IPs manually as shown below).
+4. Ensure **Enable DHCP** is checked.
 
 ---
-## 2. Checking IP address on Kail Linux
-ifconfig
+
+## 2. Checking IP Address on Kali Linux
+Kali comes with `net-tools` pre-installed. To check your interface details:
+
+```bash
+ifconfig eth0
+```
+
 ## 3. Checking IP address on Ubuntu
-1. Install ifconfig if not found
-2. sudo apt update && sudo apt install net-tools -y
-# Check IP address
-1. ifconfig
+### Update packages and install tools
+```bash
+sudo apt update && sudo apt install net-tools -y
+```
+
+### Check IP address
+```bash
+ifconfig
+```
+
 ## 4. Check if Kail Linux can connect to Metaspolitable2 through IP
-Ping Metasploitable2 (4 times)
-1. ping -c 4 10.0.2.4
+```bash
+# Ping Metasploitable2 (4 packets)
+ping -c 4 10.0.2.4
+```
+
 ## 5. Metasploitable2 Configuration
 
 ### Fix: Disk Image Not Found (VBOX_E_OBJECT_NOT_FOUND)
